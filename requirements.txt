@@ -1,0 +1,19 @@
+# pip install -r requirements.txt
+# if using conda env: conda install -r requirements.txt
+# make sure you are in the same directory as the requirements.txt file and that you have activated your virtual environment
+#python==3.11.4
+# Faker to create random data
+Faker==19.6.1
+python-dateutil==2.8.2
+six==1.16.0
+
+SQLAlchemy==2.0.21
+
+# pyodbc to connecto to the database
+pyodbc==4.0.39
+
+uvicorn==0.23.2
+
+fastapi==0.103.2
+
+#conda env is env2 (for Jon to remember)
