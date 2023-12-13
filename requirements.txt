@@ -3,7 +3,6 @@
 # make sure you are in the same directory as the requirements.txt file and that you have activated your virtual environment
 #python==3.11.4
 # Faker to create random data
-Faker==19.6.1
 python-dateutil==2.8.2
 six==1.16.0
 
@@ -12,8 +11,20 @@ SQLAlchemy==2.0.21
 # pyodbc to connecto to the database
 pyodbc==4.0.39
 
-uvicorn==0.23.2
+#remember this is running on port 8001, therefore specify by uvicorn fastapi_main:app --reload --port=8001
+uvicorn[standard]
 
-fastapi==0.103.2
 
-#conda env is env2 (for Jon to remember)
+#before i could install the fastapi to my env I had to specify the conda/forge using : conda config --add channels conda-forge
+fastapi
+
+#for developing platform independent apps (android, ios, windows, whatever)
+kivy==2.2.1
+
+httpx==0.25.2
+
+
+#the virtual env for this program is conda api.env (for Jon to remember)
+#also remember to specify pip location "$ which pip" so it installs the correct place.
+# you do that by specifying the path for installation: ~/anaconda3/envs/env_name/bin/pip install package_name
+
