@@ -18,10 +18,10 @@ from typing import List
 
 #creating an intance, where I will be connection all the routes to 
 app = FastAPI()
-# RUN: uvicorn name_of_file:app --reload ======== uvicorn fastAPI-main:app --reload
+# RUN: uvicorn name_of_file:app --reload ======== uvicorn fastAPI-main:app --reload --port xxxx
 
 # ERROR WHEN RUNNING UVICORN: when running it normally "uvicorn fastAPI-main:app --reload" an error arises, likely because a wring environment is used to receive packages
-# the solution I came up with wah to specify the path to the environment before starting the program "/Users/jonsztukslotved/anaconda3/envs/env/bin/python -m uvicorn fastAPI-main:app --reload"
+# the solution I came up with wah to specify the path to the environment before starting the program "/Users/jonsztukslotved/anaconda3/envs/env/bin/python -m uvicorn fastapi_main:app --reload --port 8001"
 # I must say that I am unsure if this is a sustainable solution for future iterations
 
 
