@@ -14,7 +14,7 @@ from typing import Optional
 server = "localhost"
 database = "mydb"
 username = "sa"
-password = "Slotved2314!" # bad practice - but only for testing
+password = "xxxx" # bad practice - but only for testing
 driver = "ODBC Driver 18 for SQL Server" # direct location, because for some reason the standard does not work for me
 connection_string = f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}&TrustServerCertificate=yes"
 
